@@ -6,3 +6,5 @@ This is a test setup to make a Bootstrap modal that:
 2. Changes the browser URL when a modal is opened or closed.
 
 See `index.html` for the markup and `/js/scripts.js` for the javascript. Requires Bootstrap and jQuery.
+
+[DEMO](http://kevinmcgillivray.net/modal-test)
