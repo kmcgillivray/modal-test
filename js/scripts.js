@@ -11,6 +11,7 @@ var main = function() {
         // Load the link to the modal-body of the associated modal
         $(body).load(link + ' #main-content');
         
+        // Change the browser URL when modal opens
         state = {
             action: 'popup'
         };
