@@ -2,17 +2,27 @@
 layout: default
 ---
 
+<p>This demonstrates the following:</p>
+
+<ol>
+  <li>Load remote content into the Bootstrap modal to keep the page load low.</li>
+  <li>Do this using a custom jQuery.load function rather than the built in (and depreciated) Bootstrap modal remote option.</li>
+  <li>Change the browser URL when a modal is opened or closed, or when the browser back and forward buttons are pressed.</li>
+</ol>
+  
+<hr> 
+
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg modal-link" data-link="/about" data-toggle="modal" data-target="#myModal">
+<button type="button" class="btn btn-primary btn-lg modal-link" data-link="{{ site.baseurl }}/about" data-toggle="modal" data-target="#myModal">
   Launch demo modal
 </button>
 
-<button type="button" class="btn btn-primary btn-lg modal-link" data-link="/contact" data-toggle="modal" data-target="#myModal2">
+<button type="button" class="btn btn-primary btn-lg modal-link" data-link="{{ site.baseurl }}/contact" data-toggle="modal" data-target="#myModal2">
   Launch demo modal
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" data-pathname="/about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" data-pathname="{{ site.baseurl }}/about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -30,7 +40,7 @@ layout: default
   </div>
 </div>
 
-<div class="modal fade" id="myModal2" data-pathname="/contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal2" data-pathname="{{ site.baseurl }}/contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -47,3 +57,5 @@ layout: default
     </div>
   </div>
 </div>
+<hr>
+<a href="https://github.com/kmcgillivray/modal-test">See code on GitHub</a> | <a href="http://kevinmcgillivray.net">Home</a>

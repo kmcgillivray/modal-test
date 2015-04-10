@@ -25,6 +25,7 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 1em;
   line-height: 1.35;
+  padding-top: 2rem;
 }
 img {
 	width: 100%;
